@@ -1,3 +1,4 @@
+import oop.lesson08.ArrayListOfStudents.StudentManager;
 import oop.lesson08.LenghtOfCourseNames.FunctionalProgrammingMagic;
 import oop.lesson08.SimpleStudentClass.Student;
 
@@ -22,5 +23,11 @@ void main() {
     studentOne.displayStudentInformation();
     System.out.println("Passing: "+ studentOne.checkIfStudentPass());
 
+    StudentManager studentPortal = new StudentManager();
 
+    studentPortal.addStudent(new Student("Alice", 22, 85.0f));
+    studentPortal.addStudent(new Student("Bob", 21, 45.0f));
+
+    studentPortal.displayStudents();
+    studentPortal.findStudent("Alice");
 }

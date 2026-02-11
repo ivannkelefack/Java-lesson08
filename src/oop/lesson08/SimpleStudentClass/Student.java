@@ -2,7 +2,7 @@ package oop.lesson08.SimpleStudentClass;
 
 // We set the Properties: name, age, grade
 public class Student {
-    private String name;
+    public String name;
     private int age;
     private float grade;
 
