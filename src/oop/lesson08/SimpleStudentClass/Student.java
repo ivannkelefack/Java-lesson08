@@ -25,4 +25,10 @@ public class Student {
         }
         return false;
     }
+
+    // Use this method so I can print the values and not the address
+    @Override
+    public String toString() {
+        return "Name: " + name + ", Age: " + age + ", Grade: " + grade;
+    }
 }
